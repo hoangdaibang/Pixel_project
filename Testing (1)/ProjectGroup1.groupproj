@@ -1,0 +1,39 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3B6FC644-CD0F-4D10-9A31-73DC1884FE9C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\PIXEL_N\PIXEL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\SKETCHUP SAVE PROJECT\pixel\pixel\pixel.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PIXEL">
+        <MSBuild Projects="..\..\SKETCHUP SAVE PROJECT\pixel\pixel\pixel.dproj"/>
+    </Target>
+    <Target Name="PIXEL:Clean">
+        <MSBuild Projects="..\..\SKETCHUP SAVE PROJECT\pixel\pixel\pixel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PIXEL:Make">
+        <MSBuild Projects="..\..\SKETCHUP SAVE PROJECT\pixel\pixel\pixel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PIXEL;pixel"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PIXEL:Clean;pixel:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PIXEL:Make;pixel:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

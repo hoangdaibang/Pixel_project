@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)https://forum.lazarus.freepascal.org/index.php?topic=32648.0 -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="./[SOLVED] Need help drawing a rectangle with opacity._files/index.css">
+	<link rel="stylesheet" type="text/css" href="./[SOLVED] Need help drawing a rectangle with opacity._files/webkit.css">
+	<script type="text/javascript" src="./[SOLVED] Need help drawing a rectangle with opacity._files/script.js.tải xuống"></script>
+	<script type="text/javascript" src="./[SOLVED] Need help drawing a rectangle with opacity._files/theme.js.tải xuống"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "/Themes/default";
+		var smf_default_theme_url = "/Themes/default";
+		var smf_images_url = "/Themes/default/images";
+		var smf_scripturl = "https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	
+	<meta name="description" content="[SOLVED] Need help drawing a rectangle with opacity.">
+	<title>[SOLVED] Need help drawing a rectangle with opacity.</title>
+	<link rel="canonical" href="https://forum.lazarus.freepascal.org/index.php?topic=32648.0">
+	<link rel="help" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=help">
+	<link rel="search" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=search">
+	<link rel="contents" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;">
+	<link rel="alternate" type="application/rss+xml" title="Lazarus - RSS" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;type=rss;action=.xml">
+	<link rel="prev" href="https://forum.lazarus.freepascal.org/index.php/topic,32648.0/prev_next,prev.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4">
+	<link rel="next" href="https://forum.lazarus.freepascal.org/index.php/topic,32648.0/prev_next,next.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4">
+	<link rel="index" href="https://forum.lazarus.freepascal.org/index.php/board,39.0.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4">
+			<script src="./[SOLVED] Need help drawing a rectangle with opacity._files/jquery-1.10.1.min.js.tải xuống"></script><meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if lt IE 9]>
+	<style type="text/css">
+		  body {min-width:900px;}
+	</style>
+	<![endif]--><!--[if lt IE 7]>
+	<style type="text/css">
+	      #centerContainer {float: left;}
+		  body {width:900px;}
+	</style>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="./[SOLVED] Need help drawing a rectangle with opacity._files/tp-style.css">
+	<style type="text/css">
+		.block_leftcontainer,
+		.block_rightcontainer,
+		.block_centercontainer,
+		.block_uppercontainer,
+		.block_lowercontainer,
+		.block_topcontainer,
+		.block_bottomcontainer
+		{
+			padding-bottom: 4px;
+		}
+		#tpleftbarHeader
+		{
+			margin-right: 4px;
+		}
+		#tprightbarHeader
+		{
+			margin-left: 4px;
+		}
+	</style>
+	  <script type="text/javascript"><!-- // --><![CDATA[
+		
+		var tpPanels = new Array();
+		function togglepanel( targetID )
+		{
+			var pstate = 0;
+			var panel = targetID;
+			var img = "toggle_" + targetID;
+			var ap = 0;
+
+			if ( document.getElementById ) {
+				target = document.getElementById( panel );
+				if ( target.style.display == "none" ) {
+					target.style.display = "";
+					pstate = 1;
+					removeFromArray(targetID, tpPanels);
+					document.cookie="tp_panels=" + tpPanels.join(",") + "; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
+					document.getElementById(img).src = '/Themes/default/images/tinyportal/TPupshrink.png';
+				}
+				else {
+					target.style.display = "none";
+					pstate = 0;
+					tpPanels.push(targetID);
+					document.cookie="tp_panels=" + tpPanels.join(",") + "; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
+					document.getElementById(img).src = '/Themes/default/images/tinyportal/TPupshrink2.png';
+				}
+			}
+		}
+		function removeFromArray(value, array){
+			for(var x=0;x<array.length;x++){
+				if(array[x]==value){
+					array.splice(x, 1);
+				}
+			}
+			return array;
+		}
+		function inArray(value, array){
+			for(var x=0;x<array.length;x++){
+				if(array[x]==value){
+					return 1;
+				}
+			}
+			return 0;
+		}
+	// ]]></script>
+		<script type="text/javascript" src="./[SOLVED] Need help drawing a rectangle with opacity._files/captcha.js.tải xuống"></script>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./[SOLVED] Need help drawing a rectangle with opacity._files/translateelement.css"></head>
+<body id="topicpage" class="boardpage board39 topicpage topic32648" style="">
+<div id="wrapper" style="width: 98%">
+	<div id="header"><div class="frame">
+		<div id="top_section">
+			<h1 class="forumtitle">
+				<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;">Lazarus</a>
+			</h1>
+		<div id="main_menu">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home">
+					<a class="active firstlevel" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_help">
+					<a class="firstlevel" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=help">
+						<span class="firstlevel">Help</span>
+					</a>
+					<ul>
+						<li>
+							<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=tpmod;sa=help">
+								<span>TinyPortal</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_search">
+					<a class="firstlevel" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=search">
+						<span class="firstlevel">Search</span>
+					</a>
+				</li>
+				<li id="button_login">
+					<a class="firstlevel" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=login">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register">
+					<a class="firstlevel" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=register">
+						<span class="last firstlevel">Register</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div></div>
+	<div id="content_section"><div class="frame">
+		<div id="main_content_section">
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;"><span>Lazarus</span></a> »
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=forum"><span>Forum</span></a> »
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=forum#c9"><span>Programming</span></a> »
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/board,57.0.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4"><span>Graphics and Multimedia</span></a> »
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/board,39.0.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4"><span>Graphics</span></a> (Moderator: <a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=39266" title="Board Moderator">Ask</a>) »
+			</li>
+			<li class="last">
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.0.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4"><span>[SOLVED] Need help drawing a rectangle with opacity.</span></a>
+			</li>
+		</ul>
+	</div><div class="lrs lrON tp_responsive">
+	<div style="float: right; margin-right: 0.5em; margin-top: -1.5em;">
+	<a title="Left Panel" style="cursor: pointer;" name="toggle_tpleftbarHeader" onclick="togglepanel(&#39;tpleftbarHeader&#39;);togglepanel(&#39;tpleftbarContainer&#39;)">
+		<img id="toggle_tpleftbarHeader" src="./[SOLVED] Need help drawing a rectangle with opacity._files/TPupshrink.png" alt="*">
+	</a>
+	<a title="Right Panel" style="cursor: pointer;" name="toggle_tprightbarHeader" onclick="togglepanel(&#39;tprightbarHeader&#39;);togglepanel(&#39;tprightbarContainer&#39;)">
+		<img id="toggle_tprightbarHeader" src="./[SOLVED] Need help drawing a rectangle with opacity._files/TPupshrink.png" alt="*">
+	</a>
+	<a title="Bottom Panel" style="cursor: pointer;" name="toggle_tpbottombarHeader" onclick="togglepanel(&#39;tpbottombarHeader&#39;);togglepanel(&#39;&#39;)">
+		<img id="toggle_tpbottombarHeader" src="./[SOLVED] Need help drawing a rectangle with opacity._files/TPupshrink.png" alt="*">
+	</a></div><div id="mainContainer" style="clear: both;">
+			<div id="tpleftbarContainer" style="width:180px; ">
+				<div id="tpleftbarHeader" style="">
+				<div class="block_leftcontainer htmlbox" id="htmlbox_logo">
+	<div class="tp_leftblock_noframe">
+		<div class="" id="block17"><div class="blockbody" style="overflow: auto;"><div align="center" valign="middle"><a href="https://www.lazarus-ide.org/"><img width="160" border="0" src="./[SOLVED] Need help drawing a rectangle with opacity._files/splash_logo.png" alt="Lazarus Logo"></a></div></div>
+		</div>
+	</div>
+	</div><div class="block_leftcontainer" id="block_catmenu">
+	<div class="tp_leftblock_noframe">
+		<div class="" id="block14"><div class="blockbody" style="overflow: auto;">
+	<ul class="tp_catmenu">
+		<li class="tp_catmenu_header">&nbsp;&nbsp;
+			<a class="tp_catmenu_header" name="header47"><b>Free Pascal</b></a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://www.freepascal.org/" target="_blank">Website</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="https://www.freepascal.org/download.html" target="_blank">Downloads</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://wiki.freepascal.org/" target="_blank">Wiki</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://bugs.freepascal.org/set_project.php?project_id=6" target="_blank">Bugtracker</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://lists.freepascal.org/mailman/listinfo" target="_blank">Mailing List</a></li>
+		<li class="tp_catmenu_header">&nbsp;&nbsp;
+			<a class="tp_catmenu_header" name="header46"><b>Lazarus</b></a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="https://www.lazarus-ide.org/" target="_blank">Website</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://sourceforge.net/project/showfiles.php?group_id=89339" target="_blank">Downloads (Laz+FPC)</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="https://packages.lazarus-ide.org/">Packages (OPM)</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://wiki.lazarus.freepascal.org/Lazarus_Faq" target="_blank">FAQ</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://wiki.lazarus.freepascal.org/">Wiki</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://bugs.freepascal.org/view_all_bug_page.php?project_id=1">Bugtracker</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="https://forum.lazarus.freepascal.org/index.php/page,9.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4">IRC channel</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://twitter.com/LazarusDev">Follow us on Twitter</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="https://forum.lazarus.freepascal.org/index.php/page,28.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4">Latest SVN</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="https://lists.lazarus-ide.org/listinfo">Mailing List</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="https://forum.lazarus.freepascal.org/index.php/page,21.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4">Other languages</a></li>
+		<li class="tp_catmenu_header">&nbsp;&nbsp;
+			<a class="tp_catmenu_header" name="header55"><b>Foundation</b></a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://foundation.freepascal.org/" target="_blank">Website</a></li>
+		<li class="tp_catmenu_header">&nbsp;&nbsp;
+			<a class="tp_catmenu_header" name="header19"><b>Useful Wiki Links</b></a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://wiki.lazarus.freepascal.org/Roadmap" target="_blank">Project Roadmap</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://wiki.lazarus.freepascal.org/index.php/Getting_Lazarus">Getting the Source</a></li>
+		<li>&nbsp;&nbsp;
+			<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/bullet3.png" alt="">
+			<a href="http://wiki.lazarus.freepascal.org/Screenshots">Screenshots</a></li>
+	</ul></div>
+		</div>
+	</div>
+	</div><div class="block_leftcontainer scriptbox" id="scriptbox_Donate">
+	<div class="tborder tp_leftblock_frame">
+		<div class="tp_leftblock_body" id="block26"><div class="windowbg2"><div style="padding: 8px 8px 0 8px;"><div class="blockbody" style="overflow: auto;"><center>
+<form action="https://sourceforge.net/p/lazarus/donate-euro" method="get">
+<input type="submit" value="Donate €" class="button">
+</form>
+<form action="https://sourceforge.net/p/lazarus/donate-usd" method="get">
+<input type="submit" value="Donate $" class="button">
+</form><div style="text-align: center; padding: 3px;" class="smalltext"><a href="http://wiki.lazarus.freepascal.org/How_to_donate_to_Lazarus">About donations (wiki)</a></div>
+</center></div></div><span class="botslice"><span></span></span></div>
+		</div>
+	</div>
+	</div><div class="block_leftcontainer scriptbox" id="scriptbox_Bookstore">
+	<div class="tborder tp_leftblock_frame"><div class="tp_half"><h3 class="titlebg"><span class="l"></span><span class="r"></span><a href="javascript: void(0); return false" onclick="toggle(&#39;29&#39;); return false"><img id="blockcollapse29" style="margin: 8px 0 0 0; " align="right" src="./[SOLVED] Need help drawing a rectangle with opacity._files/TPcollapse.png" border="0" alt="" title="Collapse or Expand Block"></a><span class="header">Bookstore</span></h3></div>
+		<div class="tp_leftblock_body" id="block29"><div class="windowbg2"><div style="padding: 8px 8px 0 8px;"><div class="blockbody" style="overflow: auto;"><div><table>
+<tbody><tr>
+  <td><a target="_blank" href="https://www.blaisepascalmagazine.eu/product/books/"><img height="78" border="0" src="./[SOLVED] Need help drawing a rectangle with opacity._files/davidbooksmall.png" alt="Computer Math and Games in Pascal"></a>
+ </td>
+  <td>
+    <div class="smalltext"><a target="_blank" href="https://www.blaisepascalmagazine.eu/product/books/">Computer Math and Games in Pascal</a></div>
+    <div class="smalltext"><a target="_blank" href="https://www.blaisepascalmagazine.eu/online-preview-book-computer-graphics-math-games/">(preview)</a></div>
+ </td>
+</tr>
+<tr>
+  <td><a target="_blank" href="https://www.blaisepascalmagazine.eu/blog/update-about-the-lazarus-handbook/"><img height="78" border="0" src="./[SOLVED] Need help drawing a rectangle with opacity._files/lazbooksmall.png" alt="Lazarus Handbook"></a>
+ </td>
+  <td>
+    <div class="smalltext"><a target="_blank" href="https://www.blaisepascalmagazine.eu/blog/update-about-the-lazarus-handbook/">Lazarus Handbook</a></div>
+    <div class="smalltext"><a target="_blank" href="https://www.blaisepascalmagazine.eu/blog/update-about-the-lazarus-handbook/"></a></div>
+ </td>
+</tr></tbody></table></div></div></div><span class="botslice"><span></span></span></div>
+		</div>
+	</div>
+	</div><div class="block_leftcontainer" id="block_searchbox">
+	<div class="tborder tp_leftblock_frame"><div class="tp_half"><h3 class="titlebg"><span class="l"></span><span class="r"></span><a href="javascript: void(0); return false" onclick="toggle(&#39;2&#39;); return false"><img id="blockcollapse2" style="margin: 8px 0 0 0; " align="right" src="./[SOLVED] Need help drawing a rectangle with opacity._files/TPcollapse.png" border="0" alt="" title="Collapse or Expand Block"></a><a class="subject" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=search">Search</a></h3></div>
+		<div class="tp_leftblock_body" id="block2"><div class="windowbg2"><div style="padding: 8px 8px 0 8px;"><div class="blockbody" style="overflow: auto;">
+	<form accept-charset="UTF-8" action="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=search2" method="post" style="padding: 0; text-align: center; margin: 0; ">
+		<input type="text" name="search" value="" class="block_search">
+		<input type="submit" name="submit" value="Search" class="block_search_submit button_submit"><br>
+		<br><span class="smalltext"><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=search;advanced">Advanced search</a></span>
+		<input type="hidden" name="advanced" value="0">
+	</form></div></div><span class="botslice"><span></span></span></div>
+		</div>
+	</div>
+	</div><script type="text/javascript"><!-- // --><![CDATA[
+				function toggle( targetId )
+				{
+					var state = 0;
+					var blockname = "block" + targetId;
+					var blockimage = "blockcollapse" + targetId;
+
+					if ( document.getElementById ) {
+						target = document.getElementById( blockname );
+						if ( target.style.display == "none" ) {
+							target.style.display = "";
+							state = 1;
+						}
+						else {
+							target.style.display = "none";
+							state = 0;
+						}
+
+						document.getElementById( blockimage ).src = "/Themes/default/images/tinyportal" + (state ? "/TPcollapse.png" : "/TPexpand.png");
+						var tempImage = new Image();
+						tempImage.src = "https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=tpmod;upshrink=" + targetId + ";state=" + state + ";" + (new Date().getTime());
+
+					}
+				}
+			// ]]></script>
+				<p class="clearthefloat"></p></div>
+			</div>
+			<div id="tprightbarContainer" style="width:170px;">
+				<div id="tprightbarHeader" style="">
+				<div class="block_rightcontainer" id="block_recentbox">
+	<div class="tborder tp_rightblock_frame"><div class="tp_half"><h3 class="titlebg"><span class="l"></span><span class="r"></span><a href="javascript: void(0); return false" onclick="toggle(&#39;25&#39;); return false"><img id="blockcollapse25" style="margin: 8px 0 0 0; " align="right" src="./[SOLVED] Need help drawing a rectangle with opacity._files/TPcollapse.png" border="0" alt="" title="Collapse or Expand Block"></a>Recent</h3></div>
+		<div class="tp_rightblock_body" id="block25"><div class="windowbg2"><div style="padding: 8px 8px 0 8px;"><div class="blockbody" style="overflow: auto;">
+		<ul class="recent_topics" style="margin: 0; padding: 0;">
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,24176.msg374329/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="BGRA Controls">BGRA Controls</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=60514">WD4080</a></b> <br><span class="smalltext">[<strong>Today</strong> at 12:21:14 pm]</span>
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,51062.msg374328/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="&quot;i18n Options &gt; Create/update.po file...&quot; doesn&#39;t work properly">"i18n Options &gt; Create/up...</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=6324">Ñuño_Martínez</a></b> <br><span class="smalltext">[<strong>Today</strong> at 12:20:54 pm]</span>
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,51052.msg374327/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="Image Editor for TimageList is not transparenting the images from MS Paint.">Image Editor for TimageLi...</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=58816">loaded</a></b> <br><span class="smalltext">[<strong>Today</strong> at 10:47:49 am]</span>
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,50909.msg374326/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="LAMW AND DROPBOX FILES">LAMW AND DROPBOX FILES</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=48975">magleft</a></b> <br><span class="smalltext">[<strong>Today</strong> at 10:46:54 am]</span>
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,50943.msg374324/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="AVPlayer - have sound, but no video">AVPlayer - have sound, bu...</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=64003">trev</a></b> <br><span class="smalltext">[<strong>Today</strong> at 09:58:20 am]</span>
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,51059.msg374323/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="How to select the column (or row) by clicking its header (col/row)?">How to select the column ...</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=45589">wp</a></b> <br><span class="smalltext">[<strong>Today</strong> at 09:26:02 am]</span>
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,51060.msg374321/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="How to save my Sheet, I&#39;m only using the TsWorksheetGrid (no TsWorkbookSource)?">How to save my Sheet, I'm...</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=45589">wp</a></b> <br><span class="smalltext">[<strong>Today</strong> at 09:24:34 am]</span>
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,49670.msg374320/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="Linker does not exclude unused procs if FPC option -g used (64-bit only!)">Linker does not exclude u...</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=47423">PascalDragon</a></b> <br><span class="smalltext">[<strong>Today</strong> at 09:23:43 am]</span>
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,51043.msg374319/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="Building a package with just FPC">Building a package with j...</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=47423">PascalDragon</a></b> <br><span class="smalltext">[<strong>Today</strong> at 09:13:56 am]</span>
+			</li>
+			<li style="border: none; margin-bottom: 0;padding-bottom: 0;">
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,51046.msg374318/topicseen.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new" title="Writing CHM Files.">Writing CHM Files.</a>
+				 by <b><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=58364">gour</a></b> <br><span class="smalltext">[<strong>Today</strong> at 09:07:20 am]</span>
+			</li>
+		</ul></div></div><span class="botslice"><span></span></span></div>
+		</div>
+	</div>
+	</div><script type="text/javascript"><!-- // --><![CDATA[
+				function toggle( targetId )
+				{
+					var state = 0;
+					var blockname = "block" + targetId;
+					var blockimage = "blockcollapse" + targetId;
+
+					if ( document.getElementById ) {
+						target = document.getElementById( blockname );
+						if ( target.style.display == "none" ) {
+							target.style.display = "";
+							state = 1;
+						}
+						else {
+							target.style.display = "none";
+							state = 0;
+						}
+
+						document.getElementById( blockimage ).src = "/Themes/default/images/tinyportal" + (state ? "/TPcollapse.png" : "/TPexpand.png");
+						var tempImage = new Image();
+						tempImage.src = "https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=tpmod;upshrink=" + targetId + ";state=" + state + ";" + (new Date().getTime());
+
+					}
+				}
+			// ]]></script>
+				<p class="clearthefloat"></p></div>
+			</div>
+		<div id="centerContainer">
+			<div id="tpcontentHeader">
+			</div>
+			<a id="top"></a>
+			<a id="msg210634"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.0/prev_next,prev.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new">« previous</a> <a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.0/prev_next,next.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new">next »</a></div>
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=printpage;topic=32648.0" rel="new_win nofollow"><span class="last">Print</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Pages: [<strong>1</strong>] </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/normal_post.gif" align="bottom" alt="">
+						<span id="author">Author</span>
+						Topic: [SOLVED] Need help drawing a rectangle with opacity. &nbsp;(Read 6986 times)
+					</h3>
+				</div>
+				<form action="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=quickmod2;topic=32648.0" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave(&#39;a03d22b20c867c22e4ebcf509bde5c71&#39;, &#39;a8c20ffe0d&#39;) : false">
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=58591" title="View the profile of knuckles">knuckles</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_210634_extra_info">
+								<li class="postgroup">Full Member</li>
+								<li class="stars"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=58591">
+										<img class="avatar" src="./[SOLVED] Need help drawing a rectangle with opacity._files/avatar_58591_1453414572.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 122</li>
+								<li class="profile">
+									<ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_210634">
+										<a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210634.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210634" rel="nofollow">[SOLVED] Need help drawing a rectangle with opacity.</a>
+									</h5>
+									<div class="smalltext">« <strong> on:</strong> May 16, 2016, 11:05:25 pm »</div>
+									<div id="msg_210634_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_210634">I need to draw a rectangle that can have a opacity value from 0 to 100.<br><br>The below snippet from Delphi Dabbler (<a href="http://delphidabbler.com/tips/203" class="bbc_link" target="_blank" rel="noopener noreferrer">http://delphidabbler.com/tips/203</a>) works but is very slow with larger rectangles:<br><br><div class="codeheader">Code: Pascal &nbsp;<a class="codeoperation" onclick="var oCodeArea = this.parentNode.nextSibling; if (&#39;createTextRange&#39; in document.body){var oCurRange = document.body.createTextRange(); oCurRange.moveToElementText(oCodeArea); oCurRange.select();} else { var oCurSelection = window.getSelection(); var curRange = document.createRange(); curRange.selectNodeContents(oCodeArea); oCurSelection.removeAllRanges(); oCurSelection.addRange(curRange); } return false;" href="javascript:void(0);">[Select]</a><a onclick="this.parentNode.nextSibling.style.height=&#39;&#39;; this.nextSibling.style.display=&#39;&#39;; this.style.display=&#39;none&#39;; return false;" style="float: right;" href="javascript:void(0);">[+]</a><a onclick="this.parentNode.nextSibling.style.height=Math.min(this.parentNode.nextSibling.clientHeight+15,306)+&#39;px&#39;; this.previousSibling.style.display=&#39;&#39;; this.style.display=&#39;none&#39;; return false;" style="float: right; display: none;" href="javascript:void(0);">[-]</a><script type="text/javascript">window.onload = function(){var x1 = document.getElementById("main_content_section"); if (x1) { var x = document.getElementsByClassName("geshi");for (var i = 0; i < x.length; i++) { x[i].style.maxHeight='none'; x[i].style.height = Math.min(x[i].clientHeight+15,306)+'px'; x[i].style.resize = "vertical";}};}</script></div><div class="pascal geshi" style="font-family: monospace; max-height: none; height: 306px; resize: vertical;"><ol><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">procedure</span> DrawTransparentRectangle<span style="color: #009900;">(</span>Canvas<span style="color: #000066;">:</span> TCanvas<span style="color: #000066;">;</span> Rect<span style="color: #000066;">:</span> TRect<span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; Color<span style="color: #000066;">:</span> TColor<span style="color: #000066;">;</span> Transparency<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">var</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; X<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; Y<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; C<span style="color: #000066;">:</span> TColor<span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; R<span style="color: #000066;">,</span> G<span style="color: #000066;">,</span> B<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; RR<span style="color: #000066;">,</span> RG<span style="color: #000066;">,</span> RB<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">begin</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; RR <span style="color: #000066;">:</span><span style="color: #000066;">=</span> GetRValue<span style="color: #009900;">(</span>Color<span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; RG <span style="color: #000066;">:</span><span style="color: #000066;">=</span> GetGValue<span style="color: #009900;">(</span>Color<span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; RB <span style="color: #000066;">:</span><span style="color: #000066;">=</span> GetBValue<span style="color: #009900;">(</span>Color<span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; <span style="color: #000000; font-weight: bold;">for</span> Y <span style="color: #000066;">:</span><span style="color: #000066;">=</span> Rect<span style="color: #000066;">.</span><span style="color: #006600;">Top</span> <span style="color: #000000; font-weight: bold;">to</span> Rect<span style="color: #000066;">.</span><span style="color: #006600;">Bottom</span> <span style="color: #000066;">-</span> <span style="color: #cc66cc;">1</span> <span style="color: #000000; font-weight: bold;">do</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; <span style="color: #000000; font-weight: bold;">for</span> X <span style="color: #000066;">:</span><span style="color: #000066;">=</span> Rect<span style="color: #000066;">.</span><span style="color: #006600;">Left</span> <span style="color: #000000; font-weight: bold;">to</span> Rect<span style="color: #000066;">.</span><span style="color: #006600;">Right</span> <span style="color: #000066;">-</span> <span style="color: #cc66cc;">1</span> <span style="color: #000000; font-weight: bold;">do</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; <span style="color: #000000; font-weight: bold;">begin</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; C <span style="color: #000066;">:</span><span style="color: #000066;">=</span> Canvas<span style="color: #000066;">.</span><span style="color: #006600;">Pixels</span><span style="color: #009900;">[</span>X<span style="color: #000066;">,</span> Y<span style="color: #009900;">]</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; R <span style="color: #000066;">:</span><span style="color: #000066;">=</span> Round<span style="color: #009900;">(</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #cc66cc;">0.01</span> <span style="color: #000066;">*</span> <span style="color: #009900;">(</span>Transparency <span style="color: #000066;">*</span> GetRValue<span style="color: #009900;">(</span>C<span style="color: #009900;">)</span> <span style="color: #000066;">+</span> <span style="color: #009900;">(</span><span style="color: #cc66cc;">100</span> <span style="color: #000066;">-</span> Transparency<span style="color: #009900;">)</span> <span style="color: #000066;">*</span> RR<span style="color: #009900;">)</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; <span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; G <span style="color: #000066;">:</span><span style="color: #000066;">=</span> Round<span style="color: #009900;">(</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #cc66cc;">0.01</span> <span style="color: #000066;">*</span> <span style="color: #009900;">(</span>Transparency <span style="color: #000066;">*</span> GetGValue<span style="color: #009900;">(</span>C<span style="color: #009900;">)</span> <span style="color: #000066;">+</span> <span style="color: #009900;">(</span><span style="color: #cc66cc;">100</span> <span style="color: #000066;">-</span> Transparency<span style="color: #009900;">)</span> <span style="color: #000066;">*</span> RG<span style="color: #009900;">)</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; <span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; B <span style="color: #000066;">:</span><span style="color: #000066;">=</span> Round<span style="color: #009900;">(</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #cc66cc;">0.01</span> <span style="color: #000066;">*</span> <span style="color: #009900;">(</span>Transparency <span style="color: #000066;">*</span> GetBValue<span style="color: #009900;">(</span>C<span style="color: #009900;">)</span> <span style="color: #000066;">+</span> <span style="color: #009900;">(</span><span style="color: #cc66cc;">100</span> <span style="color: #000066;">-</span> Transparency<span style="color: #009900;">)</span> <span style="color: #000066;">*</span> RB<span style="color: #009900;">)</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; <span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; &nbsp; Canvas<span style="color: #000066;">.</span><span style="color: #006600;">Pixels</span><span style="color: #009900;">[</span>X<span style="color: #000066;">,</span> Y<span style="color: #009900;">]</span> <span style="color: #000066;">:</span><span style="color: #000066;">=</span> RGB<span style="color: #009900;">(</span>R<span style="color: #000066;">,</span> G<span style="color: #000066;">,</span> B<span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; &nbsp; <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></div></li></ol></div><br>I know the reason is because accessing pixels individually is a lot slower then using scanline but I am unsure how I exactly I could optimise the above. I thought maybe draw to a offscreen bitmap and use it's scanline but not exactly sure how I would go about that (the scanline part), I also need to make sure I can see through the opacity rectangle at whatever graphic is underneath on the canvas.<br><br>Alternatively, Delphi has Windows.AlphaBlend which I believe could help me greatly but I couldn't find this in Lazarus.<br><br>Can anyone advise how to write such a procedure to paint a rectangle with opacity that is not slow? I need to draw a overlay rectangle on top of a canvas, it doesn't even need to be based on the example above I just need a quick way of doing this without any 3rd party solution such as GR32 etc.<br><br>Thanks.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_210634">
+								« <em>Last Edit: May 17, 2016, 07:05:56 pm by knuckles</em> »
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg210640"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=53955" title="View the profile of lainz">lainz</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_210640_extra_info">
+								<li class="postgroup">Hero Member</li>
+								<li class="stars"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=53955">
+										<img class="avatar" src="./[SOLVED] Need help drawing a rectangle with opacity._files/4131395" width="64" height="64" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 3659</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://lainz.github.io/" title="Lainz" target="_blank" rel="noopener noreferrer" class="new_win"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/www_sm.gif" alt="Lainz"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_210640">
+										<a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210640.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210640" rel="nofollow">Re: Need help drawing a rectangle with opacity.</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #1 on:</strong> May 17, 2016, 12:35:45 am »</div>
+									<div id="msg_210640_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_210640">Try using BGRABitmap library.<br><div class="codeheader">Code: Pascal &nbsp;<a class="codeoperation" onclick="var oCodeArea = this.parentNode.nextSibling; if (&#39;createTextRange&#39; in document.body){var oCurRange = document.body.createTextRange(); oCurRange.moveToElementText(oCodeArea); oCurRange.select();} else { var oCurSelection = window.getSelection(); var curRange = document.createRange(); curRange.selectNodeContents(oCodeArea); oCurSelection.removeAllRanges(); oCurSelection.addRange(curRange); } return false;" href="javascript:void(0);">[Select]</a><a onclick="this.parentNode.nextSibling.style.height=&#39;&#39;; this.nextSibling.style.display=&#39;&#39;; this.style.display=&#39;none&#39;; return false;" style="float: right;" href="javascript:void(0);">[+]</a><a onclick="this.parentNode.nextSibling.style.height=Math.min(this.parentNode.nextSibling.clientHeight+15,306)+&#39;px&#39;; this.previousSibling.style.display=&#39;&#39;; this.style.display=&#39;none&#39;; return false;" style="float: right; display: none;" href="javascript:void(0);">[-]</a><script type="text/javascript">window.onload = function(){var x1 = document.getElementById("main_content_section"); if (x1) { var x = document.getElementsByClassName("geshi");for (var i = 0; i < x.length; i++) { x[i].style.maxHeight='none'; x[i].style.height = Math.min(x[i].clientHeight+15,306)+'px'; x[i].style.resize = "vertical";}};}</script></div><div class="pascal geshi" style="font-family: monospace; max-height: none; height: 101px; resize: vertical;"><ol><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">procedure</span> TForm1<span style="color: #000066;">.</span><span style="color: #006600;">BGRAVirtualScreen1Redraw</span><span style="color: #009900;">(</span>Sender<span style="color: #000066;">:</span> TObject<span style="color: #000066;">;</span> Bitmap<span style="color: #000066;">:</span> TBGRABitmap<span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">begin</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; Bitmap<span style="color: #000066;">.</span><span style="color: #006600;">Rectangle</span><span style="color: #009900;">(</span>x<span style="color: #000066;">,</span> y<span style="color: #000066;">,</span> x2<span style="color: #000066;">,</span> y2<span style="color: #000066;">,</span> BGRA<span style="color: #009900;">(</span><span style="color: #cc66cc;">0</span><span style="color: #000066;">,</span><span style="color: #cc66cc;">0</span><span style="color: #000066;">,</span><span style="color: #cc66cc;">0</span><span style="color: #000066;">,</span>alpha<span style="color: #009900;">)</span><span style="color: #000066;">,</span> dmDrawWithTransparency<span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></div></li></ol></div><br>x, y, x2 and y2: here put your rect. BGRA function returns a color with alpha value. In this demo I'm also using BGRAControls BGRAVirtualScreen component that is a custom panel to draw into it.<br><br>Or you can use just a TBGRABitmap object and then draw to your canvas instead.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_210640">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/ip.gif" alt="">
+								Logged
+							</div>
+							<div class="signature" id="msg_210640_signature"><a href="https://lainz.github.io/" class="bbc_link" target="_blank" rel="noopener noreferrer">https://lainz.github.io</a> - My Website<br><a href="https://lazpaint.github.io/" class="bbc_link" target="_blank" rel="noopener noreferrer">https://lazpaint.github.io/</a> - LazPaint Downloads</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg210654"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=52702" title="View the profile of engkin">engkin</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_210654_extra_info">
+								<li class="postgroup">Hero Member</li>
+								<li class="stars"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"></li>
+								<li class="postcount">Posts: 2513</li>
+								<li class="profile">
+									<ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_210654">
+										<a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210654.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210654" rel="nofollow">Re: Need help drawing a rectangle with opacity.</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #2 on:</strong> May 17, 2016, 07:24:07 am »</div>
+									<div id="msg_210654_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_210654"><div class="quoteheader"><div class="topslice_quote"><a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210634.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210634">Quote from: knuckles on May 16, 2016, 11:05:25 pm</a></div></div><blockquote class="bbc_standard_quote">Alternatively, Delphi has Windows.AlphaBlend which I believe could help me greatly but I couldn't find this in Lazarus.<br></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br>It is in unit <strong>JwaWindows</strong>.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_210654">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg210680"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=58591" title="View the profile of knuckles">knuckles</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_210680_extra_info">
+								<li class="postgroup">Full Member</li>
+								<li class="stars"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=58591">
+										<img class="avatar" src="./[SOLVED] Need help drawing a rectangle with opacity._files/avatar_58591_1453414572.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 122</li>
+								<li class="profile">
+									<ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_210680">
+										<a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210680.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210680" rel="nofollow">Re: Need help drawing a rectangle with opacity.</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #3 on:</strong> May 17, 2016, 12:33:55 pm »</div>
+									<div id="msg_210680_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_210680"><div class="quoteheader"><div class="topslice_quote"><a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210654.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210654">Quote from: engkin on May 17, 2016, 07:24:07 am</a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210634.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210634">Quote from: knuckles on May 16, 2016, 11:05:25 pm</a></div></div><blockquote class="bbc_alternate_quote">Alternatively, Delphi has Windows.AlphaBlend which I believe could help me greatly but I couldn't find this in Lazarus.<br></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br>It is in unit <strong>JwaWindows</strong>.<br></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br>I should have mentioned I tried this, in fact I did a find in files on the lazarus directory for the keyword AlphaBlend, unfortunately by adding that unit it messes up my other graphics routines as things like TBitmap get confused with which unit to use.<br><br>EDIT: Moved the unit to be the first in the uses clause and now works, will experiment with this now thanks.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_210680">
+								« <em>Last Edit: May 17, 2016, 12:36:00 pm by knuckles</em> »
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg210681"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=58591" title="View the profile of knuckles">knuckles</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_210681_extra_info">
+								<li class="postgroup">Full Member</li>
+								<li class="stars"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=58591">
+										<img class="avatar" src="./[SOLVED] Need help drawing a rectangle with opacity._files/avatar_58591_1453414572.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 122</li>
+								<li class="profile">
+									<ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_210681">
+										<a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210681.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210681" rel="nofollow">Re: Need help drawing a rectangle with opacity.</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #4 on:</strong> May 17, 2016, 12:37:25 pm »</div>
+									<div id="msg_210681_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_210681"><div class="quoteheader"><div class="topslice_quote"><a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210640.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210640">Quote from: lainz on May 17, 2016, 12:35:45 am</a></div></div><blockquote class="bbc_standard_quote">Try using BGRABitmap library.<br><div class="codeheader">Code: Pascal &nbsp;<a class="codeoperation" onclick="var oCodeArea = this.parentNode.nextSibling; if (&#39;createTextRange&#39; in document.body){var oCurRange = document.body.createTextRange(); oCurRange.moveToElementText(oCodeArea); oCurRange.select();} else { var oCurSelection = window.getSelection(); var curRange = document.createRange(); curRange.selectNodeContents(oCodeArea); oCurSelection.removeAllRanges(); oCurSelection.addRange(curRange); } return false;" href="javascript:void(0);">[Select]</a><a onclick="this.parentNode.nextSibling.style.height=&#39;&#39;; this.nextSibling.style.display=&#39;&#39;; this.style.display=&#39;none&#39;; return false;" style="float: right;" href="javascript:void(0);">[+]</a><a onclick="this.parentNode.nextSibling.style.height=Math.min(this.parentNode.nextSibling.clientHeight+15,306)+&#39;px&#39;; this.previousSibling.style.display=&#39;&#39;; this.style.display=&#39;none&#39;; return false;" style="float: right; display: none;" href="javascript:void(0);">[-]</a><script type="text/javascript">window.onload = function(){var x1 = document.getElementById("main_content_section"); if (x1) { var x = document.getElementsByClassName("geshi");for (var i = 0; i < x.length; i++) { x[i].style.maxHeight='none'; x[i].style.height = Math.min(x[i].clientHeight+15,306)+'px'; x[i].style.resize = "vertical";}};}</script></div><div class="pascal geshi" style="font-family: monospace; max-height: none; height: 101px; resize: vertical;"><ol><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">procedure</span> TForm1<span style="color: #000066;">.</span><span style="color: #006600;">BGRAVirtualScreen1Redraw</span><span style="color: #009900;">(</span>Sender<span style="color: #000066;">:</span> TObject<span style="color: #000066;">;</span> Bitmap<span style="color: #000066;">:</span> TBGRABitmap<span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">begin</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp; Bitmap<span style="color: #000066;">.</span><span style="color: #006600;">Rectangle</span><span style="color: #009900;">(</span>x<span style="color: #000066;">,</span> y<span style="color: #000066;">,</span> x2<span style="color: #000066;">,</span> y2<span style="color: #000066;">,</span> BGRA<span style="color: #009900;">(</span><span style="color: #cc66cc;">0</span><span style="color: #000066;">,</span><span style="color: #cc66cc;">0</span><span style="color: #000066;">,</span><span style="color: #cc66cc;">0</span><span style="color: #000066;">,</span>alpha<span style="color: #009900;">)</span><span style="color: #000066;">,</span> dmDrawWithTransparency<span style="color: #009900;">)</span><span style="color: #000066;">;</span></div></li><li style="white-space: nowrap; padding: 0 5px; background-color: #fff; line-height: 16px; border-left: 1px solid #999;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></div></li></ol></div><br>x, y, x2 and y2: here put your rect. BGRA function returns a color with alpha value. In this demo I'm also using BGRAControls BGRAVirtualScreen component that is a custom panel to draw into it.<br><br>Or you can use just a TBGRABitmap object and then draw to your canvas instead.<br></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br>It does simplify things somewhat but at the moment for my purpose I need to avoid a 3rd party solution.<br><br>Thanks though <img src="./[SOLVED] Need help drawing a rectangle with opacity._files/wink.gif" alt=";)" title="Wink" class="smiley"></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_210681">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg210716"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=42066" title="View the profile of circular">circular</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_210716_extra_info">
+								<li class="postgroup">Hero Member</li>
+								<li class="stars"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=42066">
+										<img class="avatar" src="./[SOLVED] Need help drawing a rectangle with opacity._files/avatar_42066_1347871776.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 3407</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://johann-elsass.net/" title="Personal webpage" target="_blank" rel="noopener noreferrer" class="new_win"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/www_sm.gif" alt="Personal webpage"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_210716">
+										<a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.msg210716.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#msg210716" rel="nofollow">Re: [SOLVED] Need help drawing a rectangle with opacity.</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #5 on:</strong> May 17, 2016, 10:27:21 pm »</div>
+									<div id="msg_210716_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_210716">Hmmm... it may be faster to use LazIntfImage as an intermediate where you do the blending and then draw it back on the canvas.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_210716">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="./[SOLVED] Need help drawing a rectangle with opacity._files/ip.gif" alt="">
+								Logged
+							</div>
+							<div class="signature" id="msg_210716_signature">Conscience is the debugger of the mind</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=printpage;topic=32648.0" rel="new_win nofollow"><span class="last">Print</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Pages: [<strong>1</strong>] </div>
+				<div class="nextlinks_bottom"><a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.0/prev_next,prev.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new">« previous</a> <a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.0/prev_next,next.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4#new">next »</a></div>
+			</div>
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;"><span>Lazarus</span></a> »
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=forum"><span>Forum</span></a> »
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=forum#c9"><span>Programming</span></a> »
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/board,57.0.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4"><span>Graphics and Multimedia</span></a> »
+			</li>
+			<li>
+				<a href="https://forum.lazarus.freepascal.org/index.php/board,39.0.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4"><span>Graphics</span></a> (Moderator: <a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=profile;u=39266" title="Board Moderator">Ask</a>) »
+			</li>
+			<li class="last">
+				<a href="https://forum.lazarus.freepascal.org/index.php/topic,32648.0.html?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4"><span>[SOLVED] Need help drawing a rectangle with opacity.</span></a>
+			</li>
+		</ul>
+	</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to"><label class="smalltext" for="display_jump_to_select">Jump to:</label> <select name="display_jump_to_select" id="display_jump_to_select" onfocus="grabJumpToContent();"><option value="?board=39.0">===&gt; Graphics</option></select>&nbsp;<input type="button" value="go" onclick="window.location.href = &#39;https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;board=39.0&#39;;"></div>
+		<br class="clear">
+				<script type="text/javascript" src="./[SOLVED] Need help drawing a rectangle with opacity._files/topic.js.tải xuống"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 32648,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="a8c20ffe0d" value="a03d22b20c867c22e4ebcf509bde5c71" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="32648" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'a03d22b20c867c22e4ebcf509bde5c71\', \'a8c20ffe0d\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;'+'?topic=32648.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 6986 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 39,
+							iCurBoardChildLevel: 1,
+							sCurBoardName: "Graphics",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 39,
+							iTopicId: 32648,
+							sSessionId: "a03d22b20c867c22e4ebcf509bde5c71",
+							sSessionVar: "a8c20ffe0d",
+							sLabelIconList: "Message Icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=verificationcode;vid=post;rand=99517e83d66426012d87fb0dcb8fe2e2", "post", 1);
+			// ]]></script></div><p class="clearthefloat" style="padding:0px;margin:0px;"></p>
+	</div>
+		<div id="tpbottombarHeader" style="clear: both;">
+				<div class="block_bottomcontainer htmlbox" id="htmlbox_links">
+	<div class="tp_bottomblock_noframe">
+		<div class="" id="block12"><div class="blockbody" style="overflow: auto;"><div style="text-align:center"><a href="http://www.freepascal.org/"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/fpclogo.gif" height="31"></a> <a href="http://sourceforge.net/projects/lazarus"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/sflogo.php" width="80" height="15" border="0" alt="Get Lazarus at SourceForge.net. Fast, secure and Free Open Source software downloads"></a> <a target="_blank" href="https://www.openhub.net/p/lazarus?ref=sample"><img border="0" src="./[SOLVED] Need help drawing a rectangle with opacity._files/widget.gif" alt="Open Hub project report for Lazarus"></a></div></div>
+		</div>
+	</div>
+	</div><script type="text/javascript"><!-- // --><![CDATA[
+				function toggle( targetId )
+				{
+					var state = 0;
+					var blockname = "block" + targetId;
+					var blockimage = "blockcollapse" + targetId;
+
+					if ( document.getElementById ) {
+						target = document.getElementById( blockname );
+						if ( target.style.display == "none" ) {
+							target.style.display = "";
+							state = 1;
+						}
+						else {
+							target.style.display = "none";
+							state = 0;
+						}
+
+						document.getElementById( blockimage ).src = "/Themes/default/images/tinyportal" + (state ? "/TPcollapse.png" : "/TPexpand.png");
+						var tempImage = new Image();
+						tempImage.src = "https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=tpmod;upshrink=" + targetId + ";state=" + state + ";" + (new Date().getTime());
+
+					}
+				}
+			// ]]></script>
+		<p class="clearthefloat"></p></div></div>
+		</div>
+	</div></div>
+	<div id="footer_section"><div class="frame">
+		<ul class="reset">
+			<li class="copyright">
+			<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=credits" title="Simple Machines Forum" target="_blank" class="new_win">SMF 2.0.17</a> |
+ <a href="https://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF © 2019</a>, <a href="https://www.simplemachines.org/" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a> | <a id="button_agreement" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=agreement"><span>Terms and Policies</span></a>
+			</span></li>
+			<li><a id="button_xhtml" href="http://validator.w3.org/check?uri=referer" target="_blank" class="new_win" title="Valid XHTML 1.0!"><span>XHTML</span></a></li>
+			<li><a id="button_rss" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=.xml;type=rss" class="new_win"><span>RSS</span></a></li>
+			<li class="last"><a id="button_wap2" href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;wap2" class="new_win"><span>WAP2</span></a></li>
+		</ul>
+	</div></div>
+</div>
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./[SOLVED] Need help drawing a rectangle with opacity._files/translate_24dp.png" width="20" height="20" alt="Google Dịch"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Văn bản gốc</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Đóng góp bản dịch hay hơn</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div style="text-align: center; width: 100%; font-size: x-small; margin-bottom: 5px;"><a target="_blank" href="http://www.tinyportal.net/" title="TinyPortal">TinyPortal</a> <a href="https://forum.lazarus.freepascal.org/index.php?PHPSESSID=rbbu8jiaia341hpfbqpi6514r4&amp;action=tpmod;sa=credits" title="TP 1.6.1">© 2005-2018</a></div><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

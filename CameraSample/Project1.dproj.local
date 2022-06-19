@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/19 15:54:37.000.574,=C:\Users\hoang\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/20 09:19:23.000.162,=C:\Users\hoang\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/20 09:20:15.000.724,=C:\Users\hoang\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/09/20 10:03:05.000.760,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit2.pas=C:\Users\hoang\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/09/20 10:03:05.000.760,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit2.dfm=C:\Users\hoang\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2020/09/20 10:03:23.000.332,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit1.pas=C:\Users\hoang\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/20 10:03:23.000.332,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit1.dfm=C:\Users\hoang\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/09/20 10:03:28.000.042,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Project1.dproj=C:\Users\hoang\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/09/20 10:47:40.000.168,=C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit3.pas</Transaction>
+    <Transaction>2020/09/20 10:59:56.000.385,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\uMain.pas=C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit1.pas</Transaction>
+    <Transaction>2020/09/20 10:59:56.000.385,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\uMain.dfm=C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit1.dfm</Transaction>
+    <Transaction>2020/09/20 11:01:21.000.303,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\uWebCam.dfm=C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit2.dfm</Transaction>
+    <Transaction>2020/09/20 11:01:21.000.303,C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\uWebCam.pas=C:\Users\hoang\Google Drive\STUDYING\Pixel\PIXEL_N_2\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

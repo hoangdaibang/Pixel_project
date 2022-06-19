@@ -1,0 +1,695 @@
+object Form1: TForm1
+  Left = 167
+  Top = 95
+  Caption = 'PIXEL_N'
+  ClientHeight = 569
+  ClientWidth = 850
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = -1
+    Top = 0
+    Width = 826
+    Height = 553
+    ActivePage = TabSheet4
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Book Antiqua'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Image 1'
+      ExplicitLeft = 140
+      ExplicitTop = 30
+      object Image1: TImage
+        Left = 0
+        Top = 0
+        Width = 592
+        Height = 523
+        Align = alClient
+        AutoSize = True
+        Enabled = False
+        OnMouseDown = Image1MouseDown
+        OnMouseMove = Image1MouseMove
+        OnMouseUp = Image1MouseUp
+        ExplicitWidth = 545
+      end
+      object Panel3: TPanel
+        Left = 592
+        Top = 0
+        Width = 226
+        Height = 523
+        Align = alRight
+        TabOrder = 0
+        object LabelMouselocal1: TLabel
+          Left = 9
+          Top = 23
+          Width = 76
+          Height = 21
+          Caption = 'Mouse local :'
+          Color = clWhite
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+        end
+        object RedIntensity1: TLabel
+          Left = 9
+          Top = 41
+          Width = 32
+          Height = 17
+          Caption = 'Red : '
+          Color = clRed
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clRed
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+        end
+        object GreenIntensity1: TLabel
+          Left = 8
+          Top = 58
+          Width = 41
+          Height = 17
+          Caption = 'Green :'
+          Color = clGreen
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clGreen
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+        end
+        object BlueIntensity1: TLabel
+          Left = 9
+          Top = 81
+          Width = 32
+          Height = 17
+          Caption = 'Blue :'
+          Color = clBlue
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+        end
+        object Intensity1: TLabel
+          Left = 8
+          Top = 104
+          Width = 60
+          Height = 17
+          Caption = 'Intensity : '
+          Color = clYellow
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+        end
+        object LabelX11: TLabel
+          Left = 8
+          Top = 127
+          Width = 19
+          Height = 17
+          BiDiMode = bdRightToLeft
+          Caption = ':X1'
+          Color = clWhite
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentBiDiMode = False
+          ParentColor = False
+          ParentFont = False
+        end
+        object LabelY11: TLabel
+          Left = 96
+          Top = 127
+          Width = 19
+          Height = 17
+          BiDiMode = bdRightToLeft
+          Caption = ':Y1'
+          Color = clWhite
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentBiDiMode = False
+          ParentColor = False
+          ParentFont = False
+        end
+        object LabelX21: TLabel
+          Left = 8
+          Top = 179
+          Width = 19
+          Height = 17
+          Caption = 'X2:'
+          Color = clWhite
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+        end
+        object LabelY21: TLabel
+          Left = 96
+          Top = 179
+          Width = 19
+          Height = 17
+          BiDiMode = bdRightToLeft
+          Caption = ':Y2'
+          Color = clWhite
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentBiDiMode = False
+          ParentColor = False
+          ParentFont = False
+        end
+        object ButtonLoadImage1: TButton
+          Left = 1
+          Top = 1
+          Width = 224
+          Height = 24
+          Align = alTop
+          Caption = 'Load Image 1...'
+          TabOrder = 0
+          OnClick = ButtonLoadImage1Click
+          ExplicitWidth = 360
+        end
+        object EditX11: TEdit
+          Left = 9
+          Top = 150
+          Width = 81
+          Height = 23
+          Color = clWhite
+          TabOrder = 1
+          Text = '100'
+        end
+        object EditY11: TEdit
+          Left = 96
+          Top = 150
+          Width = 81
+          Height = 23
+          TabOrder = 2
+          Text = '100'
+        end
+        object EditX21: TEdit
+          Left = 9
+          Top = 202
+          Width = 81
+          Height = 23
+          TabOrder = 3
+          Text = '200'
+        end
+        object EditY21: TEdit
+          Left = 95
+          Top = 202
+          Width = 81
+          Height = 23
+          TabOrder = 4
+          Text = '200'
+        end
+        object ButtonSelectMatrix1: TButton
+          Left = 8
+          Top = 231
+          Width = 81
+          Height = 25
+          Caption = 'Select'
+          TabOrder = 5
+          OnClick = ButtonSelectMatrix1Click
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Image 2'
+      ImageIndex = 2
+      ExplicitLeft = -84
+      ExplicitTop = 122
+      object Image2: TImage
+        Left = 11
+        Top = 8
+        Width = 398
+        Height = 500
+        AutoSize = True
+        Enabled = False
+        OnMouseDown = Image1MouseDown
+        OnMouseMove = Image1MouseMove
+        OnMouseUp = Image1MouseUp
+      end
+      object LabelMouselocal2: TLabel
+        Left = 656
+        Top = 39
+        Width = 76
+        Height = 17
+        Caption = 'Mouse local :'
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+      end
+      object RedIntensity2: TLabel
+        Left = 655
+        Top = 61
+        Width = 32
+        Height = 17
+        Caption = 'Red : '
+        Color = clRed
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clRed
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+      end
+      object GreenIntensity2: TLabel
+        Left = 656
+        Top = 83
+        Width = 41
+        Height = 17
+        Caption = 'Green :'
+        Color = clGreen
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clGreen
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+      end
+      object BlueIntensity2: TLabel
+        Left = 656
+        Top = 105
+        Width = 32
+        Height = 17
+        Caption = 'Blue :'
+        Color = clBlue
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+      end
+      object Intensity2: TLabel
+        Left = 656
+        Top = 127
+        Width = 60
+        Height = 17
+        Caption = 'Intensity : '
+        Color = clYellow
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+      end
+      object LabelX12: TLabel
+        Left = 652
+        Top = 149
+        Width = 19
+        Height = 17
+        BiDiMode = bdRightToLeft
+        Caption = ':X1'
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentBiDiMode = False
+        ParentColor = False
+        ParentFont = False
+      end
+      object LabelY12: TLabel
+        Left = 741
+        Top = 149
+        Width = 19
+        Height = 17
+        BiDiMode = bdRightToLeft
+        Caption = ':Y1'
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentBiDiMode = False
+        ParentColor = False
+        ParentFont = False
+      end
+      object LabelX22: TLabel
+        Left = 653
+        Top = 199
+        Width = 19
+        Height = 17
+        Caption = 'X2:'
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+      end
+      object LabelY22: TLabel
+        Left = 741
+        Top = 199
+        Width = 19
+        Height = 17
+        BiDiMode = bdRightToLeft
+        Caption = ':Y1'
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        ParentBiDiMode = False
+        ParentColor = False
+        ParentFont = False
+      end
+      object ButtonLoadImage2: TButton
+        Left = 657
+        Top = 8
+        Width = 81
+        Height = 25
+        Caption = 'Load Image 2...'
+        TabOrder = 0
+        OnClick = ButtonLoadImage1Click
+      end
+      object EditX12: TEdit
+        Left = 653
+        Top = 171
+        Width = 81
+        Height = 23
+        Color = clWhite
+        TabOrder = 1
+        Text = '100'
+      end
+      object EditY12: TEdit
+        Left = 736
+        Top = 171
+        Width = 81
+        Height = 23
+        TabOrder = 2
+        Text = '100'
+      end
+      object EditX22: TEdit
+        Left = 653
+        Top = 221
+        Width = 81
+        Height = 23
+        TabOrder = 3
+        Text = '200'
+      end
+      object EditY22: TEdit
+        Left = 736
+        Top = 221
+        Width = 81
+        Height = 23
+        TabOrder = 4
+        Text = '200'
+      end
+      object ButtonSelectMatrix2: TButton
+        Left = 653
+        Top = 249
+        Width = 81
+        Height = 25
+        Caption = 'Select'
+        TabOrder = 5
+        OnClick = ButtonSelectMatrix1Click
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Data'
+      ImageIndex = 1
+      object Memo1: TMemo
+        Left = 417
+        Top = 0
+        Width = 401
+        Height = 487
+        Align = alClient
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        Lines.Strings = (
+          
+            'X     II     Red     II     Green     II     Blue     II     Int' +
+            'ensity')
+        ParentFont = False
+        ScrollBars = ssVertical
+        TabOrder = 0
+      end
+      object Memo2: TMemo
+        Left = 0
+        Top = 0
+        Width = 417
+        Height = 487
+        Align = alLeft
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Book Antiqua'
+        Font.Style = []
+        Lines.Strings = (
+          
+            'X     II     Red     II     Green     II     Blue     II     Int' +
+            'ensity')
+        ParentFont = False
+        ScrollBars = ssVertical
+        TabOrder = 1
+      end
+      object Panel2: TPanel
+        Left = 0
+        Top = 487
+        Width = 818
+        Height = 36
+        Align = alBottom
+        TabOrder = 2
+        object Button6: TButton
+          Left = 667
+          Top = 1
+          Width = 75
+          Height = 34
+          Align = alRight
+          Caption = 'Save...'
+          TabOrder = 0
+          OnClick = Button6Click
+        end
+        object Button7: TButton
+          Left = 742
+          Top = 1
+          Width = 75
+          Height = 34
+          Align = alRight
+          Caption = 'Clear'
+          TabOrder = 1
+          OnClick = Button7Click
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Graphs'
+      DragMode = dmAutomatic
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Book Antiqua'
+      Font.Style = []
+      ImageIndex = 2
+      ParentFont = False
+      object SLScope1: TSLScope
+        Left = 0
+        Top = 0
+        Width = 818
+        Height = 487
+        Align = alClient
+        Color = clGray
+        Title.Text = 'Graphs'
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Name = 'Book Antiqua'
+        TabOrder = 0
+        YAxis.Font.Name = 'Book Antiqua'
+        YAxis.Min.Value = -100.000000000000000000
+        YAxis.Min.DataValue = -100.000000000000000000
+        YAxis.Max.Value = 100.000000000000000000
+        YAxis.Max.DataValue = 100.000000000000000000
+        YAxis.Max.Range.High.Value = 100.000000000000000000
+        YAxis.Max.Range.Low.Value = -100.000000000000000000
+        YAxis.AxisLabel.Font.Charset = ANSI_CHARSET
+        YAxis.AxisLabel.Font.Name = 'Book Antiqua'
+        YAxis.AxisLabel.Font.Style = []
+        YAxis.AxisLabel.Text = 'Intensity'
+        XAxis.Font.Charset = ANSI_CHARSET
+        XAxis.Font.Name = 'Book Antiqua'
+        XAxis.Min.AutoScale = False
+        XAxis.Max.DataValue = 10000.000000000000000000
+        XAxis.Max.Range.High.Value = 100.000000000000000000
+        XAxis.AxisLabel.Font.Charset = ANSI_CHARSET
+        XAxis.AxisLabel.Font.Name = 'Book Antiqua'
+        XAxis.AxisLabel.Font.Style = []
+        XAxis.AxisLabel.Text = 'Pixel'
+        XAxis.MaxSample.Value = 10000
+        Legend.MarkerGroups.Caption.Font.Style = []
+        Legend.Cursors.Caption.Font.Style = []
+        Legend.CursorLinks.Caption.Font.Style = []
+        Legend.Zones.Caption.Font.Style = []
+        Legend.Ellipses.Caption.Font.Style = []
+        Legend.Labels.Caption.Font.Style = []
+        Legend.Channels.Caption.Font.Style = []
+        Legend.ChannelLinks.Caption.Font.Style = []
+        DataView.Border.Pen.Color = clOlive
+        Channels = <
+          item
+            Name = 'Red'
+          end
+          item
+            Name = 'Green'
+          end
+          item
+            Name = 'Blue'
+          end
+          item
+            Name = 'Intensity'
+          end>
+      end
+      object Panel1: TPanel
+        Left = 0
+        Top = 487
+        Width = 818
+        Height = 36
+        Align = alBottom
+        TabOrder = 1
+        object Button4: TButton
+          Left = 667
+          Top = 1
+          Width = 75
+          Height = 34
+          Align = alRight
+          Caption = 'Save...'
+          TabOrder = 0
+          OnClick = Button4Click
+        end
+        object Button5: TButton
+          Left = 742
+          Top = 1
+          Width = 75
+          Height = 34
+          Align = alRight
+          Caption = 'Clear'
+          TabOrder = 1
+          OnClick = Button5Click
+        end
+        object Button3: TButton
+          Left = 237
+          Top = 1
+          Width = 75
+          Height = 34
+          Align = alLeft
+          Caption = 'Show'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Book Antiqua'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 2
+          OnClick = Button3Click
+        end
+        object CheckBox4: TCheckBox
+          Left = 164
+          Top = 1
+          Width = 73
+          Height = 34
+          Align = alLeft
+          Caption = 'Intensity'
+          Checked = True
+          State = cbChecked
+          TabOrder = 3
+        end
+        object CheckBox3: TCheckBox
+          Left = 107
+          Top = 1
+          Width = 57
+          Height = 34
+          Align = alLeft
+          Caption = 'Blue'
+          Checked = True
+          State = cbChecked
+          TabOrder = 4
+        end
+        object CheckBox1: TCheckBox
+          Left = 1
+          Top = 1
+          Width = 49
+          Height = 34
+          Align = alLeft
+          Caption = 'Red '
+          Checked = True
+          State = cbChecked
+          TabOrder = 5
+        end
+        object CheckBox2: TCheckBox
+          Left = 50
+          Top = 1
+          Width = 57
+          Height = 34
+          Align = alLeft
+          Caption = 'Green'
+          Checked = True
+          State = cbChecked
+          TabOrder = 6
+        end
+      end
+    end
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 4
+    Top = 576
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    Left = 40
+    Top = 576
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 72
+    Top = 576
+  end
+end
